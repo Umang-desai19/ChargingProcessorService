@@ -38,7 +38,7 @@ public class ChargingUpdateConsumer {
                 "timestamp: {}", message, topic, partition, system, timestamp);
 
 
-        chargingUpdateService.UpdateChargingRequestDetails(getChargingRequest(message));
+        chargingUpdateService.updateChargingRequestDetails(getChargingRequest(message));
         ack.acknowledge();
     }
 

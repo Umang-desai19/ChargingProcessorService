@@ -7,7 +7,6 @@ import com.example.chargingprocessor.repository.ChargingStationRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.time.Duration;
 import java.time.LocalDateTime;
 import java.time.temporal.ChronoUnit;
 import java.util.Optional;
@@ -21,7 +20,7 @@ public class ChargingUpdateService {
     @Autowired
     private ChargingStationRepository chargingStationRepository;
 
-    public void UpdateChargingRequestDetails(ChargingRequest chargingRequest) {
+    public void updateChargingRequestDetails(ChargingRequest chargingRequest) {
 
         if (Optional.ofNullable(chargingRequest).isEmpty()) {
             return;

@@ -1,4 +1,4 @@
-package com.example.chargingstationservice;
+package com.example.chargingprocessor;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
